@@ -22,7 +22,21 @@ body
 function bo() {
   document.getElementById('jeff').style.color = 'black';
   document.getElementById('jeff').style.backgroundColor = 'white';
-}</script>
+}
+  function swap(a, i, j)
+{
+    let temp;
+let charArray = a.split("");
+temp = charArray[i] ;
+charArray[i] = charArray[j];
+charArray[j] = temp;
+return (charArray).join("");
+}
+
+let str = "IHUOPSFESNSEJ";
+let n = str.length;
+permute(str, 0, n-1);
+  </script>
   <body id="jeff">
     <h1> ShadowDragon89's Pokéheroes Stuff</h1>
 
